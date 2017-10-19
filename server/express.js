@@ -126,7 +126,7 @@ module.exports = (backend, appRoutes, error, options, cb) => {
 
     function getClientEnv () {
       let env = {}
-      let pub = conf.get('PUBLIC') || []
+      let pub = conf.get('NPUBLIC') || []
       pub.forEach(key => env[key] = conf.get(key))
       return env
     }
